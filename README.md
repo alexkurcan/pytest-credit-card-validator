@@ -1,1 +1,0 @@
-# pytest-credit-card-validator
