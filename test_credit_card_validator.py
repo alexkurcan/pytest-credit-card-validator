@@ -81,3 +81,4 @@ class TestCredCardValidator:
     def test_valid_mastercard_upper_boundary(self):
         '''Testing the MasterCard upper boundary prefix 2720'''
         assert credit_card_validator("2720999999999993") == True
+
