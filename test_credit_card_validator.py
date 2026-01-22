@@ -16,7 +16,7 @@ class TestCredCardValidator:
         assert credit_card_validator("9911111111111117") == False
     
     def test_non_digit_characters(self):
-        '''Testing an input containing non-digit characters'''
+        '''Testing an input containing non-digit characters/incorrect format'''
         assert credit_card_validator("4111-1111-1111-1111") == False
 
     def test_alpha_input(self):
@@ -75,9 +75,9 @@ class TestCredCardValidator:
         assert credit_card_validator("5555555555554444") == True
 
     def test_valid_mastercard_lower_boundary(self):
-        '''Testing MasterCard lower boundary prefix 2221'''
+        '''Testing the MasterCard lower boundary prefix 2221'''
         assert credit_card_validator("2221000000000009") == True
 
     def test_valid_mastercard_upper_boundary(self):
-        '''Testing MasterCard upper boundary prefix 2720'''
+        '''Testing the MasterCard upper boundary prefix 2720'''
         assert credit_card_validator("2720999999999993") == True
