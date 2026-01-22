@@ -1,3 +1,8 @@
+# Name: test_credit_card_validtor.py
+# Purpose: Meant to run black box test on different credit cards/credit card types
+# Programmer: Alex Kurcan
+# Date: 01/22/2026
+
 ##import pytest
 ##from test_credit_card_validator import credit_card_validator
 
